@@ -9,15 +9,15 @@ public class Payment {
     private BigDecimal foreignCurrencyAmount;
     private BigDecimal exRate;
     private BigDecimal convertedAmount;
-    private LocalDateTime vaildUntil;
+    private LocalDateTime validUntil;
 
-    public Payment(Long orderId, String currency, BigDecimal foreignCurrencyAmount, BigDecimal exRate, BigDecimal convertedAmount, LocalDateTime vaildUntil) {
+    public Payment(Long orderId, String currency, BigDecimal foreignCurrencyAmount, BigDecimal exRate, BigDecimal convertedAmount, LocalDateTime validUntil) {
         this.orderId = orderId;
         this.currency = currency;
         this.foreignCurrencyAmount = foreignCurrencyAmount;
         this.exRate = exRate;
         this.convertedAmount = convertedAmount;
-        this.vaildUntil = vaildUntil;
+        this.validUntil = validUntil;
     }
 
     public Long getOrderId() {
@@ -41,7 +41,7 @@ public class Payment {
     }
 
     public LocalDateTime getVaildUntil() {
-        return vaildUntil;
+        return validUntil;
     }
 
     @Override
@@ -52,7 +52,7 @@ public class Payment {
                 ", foreignCurrencyAmount=" + foreignCurrencyAmount +
                 ", exRate=" + exRate +
                 ", convertedAmount=" + convertedAmount +
-                ", vaildUntil=" + vaildUntil +
+                ", vaildUntil=" + validUntil +
                 '}';
     }
 }
