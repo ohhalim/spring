@@ -1,5 +1,6 @@
-package com.tobyspring.hellospring;
+package com.tobyspring.hellospring.exrate;
 
+import com.tobyspring.hellospring.peyment.ExRateProvider;
 import org.springframework.stereotype.Component;
 
 import java.io.IOException;

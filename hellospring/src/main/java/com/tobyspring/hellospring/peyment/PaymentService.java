@@ -1,4 +1,4 @@
-package com.tobyspring.hellospring;
+package com.tobyspring.hellospring.peyment;
 
 
 import org.springframework.stereotype.Component;
